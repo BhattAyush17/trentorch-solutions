@@ -13,6 +13,7 @@ def lazy_double(values):
     """
   
     return (values * 2 for values in values)
+    
 
 
 def lazy_positive(values):
