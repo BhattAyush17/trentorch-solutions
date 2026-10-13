@@ -28,6 +28,7 @@ class View:
 
 def shares_buffer(a, b) -> bool:
     return a.buffer is b.buffer
+    return a.buffer is b.buffer
 
 
 def scale_in_place(view, k) -> None:
