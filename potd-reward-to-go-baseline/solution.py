@@ -15,8 +15,9 @@ def reward_to_go_baseline(
     advantage = target - v_current
     Return (target, advantage).
     """
-    # TODO: zero out the bootstrapped term when done, then compute advantage.
-    target = r+ gamma *(1-done)* v_next
-    advantage = target-v_current
+    # TODO: zero out the bootstrapped term when done, then compute advantage
+    target = r + gamma * (1 - done) * v_next
+    advantage = target - v_current
+
     return target, advantage
     pass
